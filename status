@@ -1,0 +1,16 @@
+static void UpdatePresence()
+{
+    DiscordRichPresence discordPresence;
+    memset(&discordPresence, 0, sizeof(discordPresence));
+    discordPresence.state = "PLAYING INFOMATION";
+    discordPresence.details = "HELP";
+    discordPresence.startTimestamp = 1507665886;
+    discordPresence.endTimestamp = 1099999999999999;
+    discordPresence.largeImageText = "INFOMATION";
+    discordPresence.smallImageText = "BOT - Level 99";
+    discordPresence.partyId = "ae488379-351d-4a4f-ad32-2b9b01c91657";
+    discordPresence.partySize = 1e+28;
+    discordPresence.partyMax = 1e+28;
+    discordPresence.joinSecret = "MTI4NzM0OjFpMmhuZToxMjMxMjM= ";
+    Discord_UpdatePresence(&discordPresence);
+}
